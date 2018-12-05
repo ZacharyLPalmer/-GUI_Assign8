@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Name: Zachary Palmer
+      Date: 12/4/18
+      Assignment: 8
+      Class: GUI 1
+    -->
+<html>
+
+<head>
+  <title>Homework 8 - GUI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/hw8.css">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div id="input">
+    <h1 id="header">Magical Multiplication Table Generator</h1>
+    <form id="inputForm" name="inputForm">
+      <!--Input forms for the starting and ending indexes-->
+      <label for="num1">Beginning Index - Multiplier</label>
+      <input type="number" name="num1" id="num1" placeholder="Any positive number">
+      <div id="topSliderStart" class="slider">
+      </div>
+      <label for="num1">Ending Index - Multiplier</label>
+      <input type="number" name="num2" id="num2" placeholder="Number greater than beginning">
+      <div id="topSliderEnd" class="slider">
+      </div>
+      <label for="num1">Beginning Index - Multiplicand</label>
+      <input type="number" name="num3" id="num3" placeholder="Any positive number">
+      <div id="sideSliderStart" class="slider">
+      </div>
+      <label for="num1">Ending Index - Multiplicand</label>
+      <input type="number" name="num4" id="num4" placeholder="Number greater than beginning">
+      <div id="sideSliderEnd" class="slider">
+      </div>
+      <input type="submit" value="Save Table" id="save">
+      <div id="inputtedVals">
+        <!--Message area for input errors and output ranges-->
+      </div>
+    </form>
+    <div id="myTabs">
+      <ul id="tabList">
+        <li><a href="#default">Workspace</a></li>
+      </ul>
+      <div id="default">
+        <div id="output">
+          <!--Output section for the table html-->
+          <table id=outputTable>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="output">
+    <!--Output section for the table html-->
+    <table id=outputTable>
+    </table>
+  </div>
+  <br>
+  <label>Index Nunber of Tab to Delete:</label>
+  <input for="indexValue" id="indexValue"><p>
+  <button type="button" id="removeTabs">Remove!</button>
+  <button type="button" id="removeAllTabs">Remove All Tabs!</button>
+  <script src="js/hw8.js"></script>
+</body>
+
+</html>
